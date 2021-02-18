@@ -1,33 +1,36 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Bake (with return)</title>
-  </head>
-  <body>
-  </body>
-  <script>
-function bake(degrees) {
-    var message;
+</head>
+<body>
+</body>
+<script>
+    function bake(degrees) {
+        var message;
 
-    if (degrees > 500) {
-        message = "I'm not a nuclear reactor!";
-    } else if (degrees < 100) {
-        message = "I'm not a refrigerator!";
-    } else {
-        message = "That's a very comfortable temperature for me.";
-        setMode("bake");
-        setTemp(degrees);
+        if (degrees > 500) {
+            message = "I'm not a nuclear reactor!";
+        } else if (degrees < 100) {
+            message = "I'm not a refrigerator!";
+        } else {
+            message = "That's a very comfortable temperature for me.";
+            setMode("bake");
+            setTemp(degrees);
+        }
+        return message;
     }
-    return message;
-}
 
-var status = bake(350);
+    var status = bake(350);
 
-// Here so the code will run!
-function setMode(mode) { };
-function setTemp(degrees) { };
+    // Here so the code will run!
+    function setMode(mode) {
+    };
 
-  </script>
+    function setTemp(degrees) {
+    };
+
+</script>
 </body>
 </html>

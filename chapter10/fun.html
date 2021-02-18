@@ -1,40 +1,40 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Fun</title>
-<script>
+    <meta charset="utf-8">
+    <title>Fun</title>
+    <script>
 
-function fun(echo) { 
-	console.log(echo);
-};
+        function fun(echo) {
+            console.log(echo);
+        };
 
-fun("hello");
+        fun("hello");
 
-function boo(aFunction) {
-	aFunction("boo");
-}
+        function boo(aFunction) {
+            aFunction("boo");
+        }
 
-boo(fun);
+        boo(fun);
 
-console.log(fun);
+        console.log(fun);
 
-fun(boo);
+        fun(boo);
 
-var moreFun = fun;
+        var moreFun = fun;
 
-moreFun("hello again");
+        moreFun("hello again");
 
-function echoMaker() {
-	return fun;
-}
+        function echoMaker() {
+            return fun;
+        }
 
-var bigFun = echoMaker();
-bigFun("Is there an echo?");
+        var bigFun = echoMaker();
+        bigFun("Is there an echo?");
 
 
-</script> 
-</head> 
+    </script>
+</head>
 <body>
 </body>
 </html>

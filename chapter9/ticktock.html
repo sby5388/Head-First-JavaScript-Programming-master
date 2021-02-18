@@ -1,32 +1,32 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title> Tick Tock </title>
-  <meta charset="utf-8">
-  <script>
+    <title> Tick Tock </title>
+    <meta charset="utf-8">
+    <script>
 
-	function display(text) { 
-		var messagePara = document.getElementById("message"); 
-		messagePara.innerHTML = messagePara.innerHTML + text;
-	}
+        function display(text) {
+            var messagePara = document.getElementById("message");
+            messagePara.innerHTML = messagePara.innerHTML + text;
+        }
 
-	var tick = true;
+        var tick = true;
 
-	function ticker() {
-		if (tick) {
-			display("TICK");
-			tick = false;
-		} else {
-			display("TOCK");
-			tick = true;
-		}
-	}
+        function ticker() {
+            if (tick) {
+                display("TICK");
+                tick = false;
+            } else {
+                display("TOCK");
+                tick = true;
+            }
+        }
 
-	window.onload = function() {
-		setInterval(ticker, 1000);
-	}
+        window.onload = function () {
+            setInterval(ticker, 1000);
+        }
 
-  </script>
+    </script>
 </head>
 <body>
 <p id="message"></p>
