@@ -20,7 +20,10 @@
     function init() {
         var planet = document.getElementById("greenplanet");
         planet.innerHTML = "Red Alert: hit by phaser fire!";
+        //设置样式（已在head中定义）
         planet.setAttribute("class", "redtext");
+
+        //
     }
 
     window.onload = init;
